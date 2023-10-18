@@ -15,7 +15,7 @@ namespace Lab6
         public int Age { get; set; }
         public string Habitat { get; set; }
 
-
+        
         public void AverageAge()
         {
 
