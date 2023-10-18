@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Elefant elefant = new Elefant();
+        }
+        public void MakeSound()
+        {
+
         }
     }
 }
