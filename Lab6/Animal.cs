@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Lab6
 {
     internal class Animal
+
     {
         public string Legs { get; set; }
         public string Namn { get; set; }
@@ -15,20 +16,46 @@ namespace Lab6
         public int Age { get; set; }
         public string Habitat { get; set; }
 
-        
+        public Animal(string legs, string namn, string eats, string habitat, int age)
+        {
+            Legs = legs;
+            Namn = namn;
+            Eats = eats;
+            Age = age;
+            Habitat = habitat;
+              
+        }
+
+
         public void AverageAge()
         {
+            Age = Age * 100;
 
         }
             
-        public void IsMammal()
+        public void IsAlien()
         {
-            
-        }
-        public void SleepHours()
-        {
+            if (Habitat != null)
+            {
+                Console.WriteLine("is an Alien");
+            }
+            else { Console.WriteLine("is not an Alien"); }
 
         }
+        public void IsOld()
+        {
+            if (Age > 50)
+            {
+                Console.WriteLine("Is over its due date.");
+            }
+            else
+            {
+             Console.WriteLine("is a young one.");
+            }
+               
+            
+        }
+
 
     }
 }
